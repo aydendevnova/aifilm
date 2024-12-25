@@ -63,8 +63,8 @@ const PlayReel: React.FC = () => {
           loop
           muted
           autoPlay
-          className="scale-[1.5]"
-          src={"/PlayReel.mp4"}
+          className="scale-[1.5] opacity-50"
+          src={"/ai/grand-prix.mp4"}
         />
       </div>
       <div className="overlay absolute flex h-full w-full flex-col items-center justify-between py-10">
@@ -83,11 +83,17 @@ const PlayReel: React.FC = () => {
           <h3>Work in motion</h3>
         </div>
         <h1 className="flex items-center justify-center gap-20 sm:gap-96">
-          <div ref={play} className="text-5xl font-light sm:text-9xl">
-            Play
+          <div
+            ref={play}
+            className="text-5xl font-bold text-orange-600 sm:text-9xl"
+          >
+            Future
           </div>
-          <div ref={reel} className="text-5xl font-light sm:text-9xl">
-            Reel
+          <div
+            ref={reel}
+            className="text-5xl font-bold text-orange-600 sm:text-9xl"
+          >
+            Vision
           </div>
         </h1>
         <p className="px-10 text-center text-xs sm:text-sm">

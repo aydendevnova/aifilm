@@ -6,7 +6,8 @@ interface FestivalHighlight {
   heading: string;
   subheading: string;
   description: string;
-  image: string;
+  image?: string;
+  video?: string;
 }
 
 const containerVariants = {
@@ -34,14 +35,14 @@ const Work: React.FC = () => {
       subheading: "157 Groundbreaking AI Films",
       description:
         "Experience the future of cinema with AI-generated and AI-enhanced films across multiple genres, from avant-garde to mainstream entertainment.",
-      image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba",
+      video: "/ai/retro.mp4",
     },
     {
       heading: "Art Exhibition",
       subheading: "200+ Digital Masterpieces",
       description:
         "Immerse yourself in a stunning collection of AI-generated artwork, showcasing the intersection of technology and creative expression.",
-      image: "https://images.unsplash.com/photo-1561089489-f13d5e730d72",
+      image: "/ai/winner.png",
     },
     {
       heading: "Industry Panels",
@@ -55,13 +56,53 @@ const Work: React.FC = () => {
       subheading: "Accessible Worldwide",
       description:
         "Can't attend in person? Experience the festival virtually with exclusive access to films, art, and behind-the-scenes content.",
-      image: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620",
+      video: "/ai/pencil-frog.mp4",
     },
   ]);
 
   return (
     <div className="relative w-full bg-white py-20">
-      <div className="mx-auto max-w-screen-2xl px-5 sm:px-24">
+      <div className="relative w-full bg-black py-32">
+        <div className="mx-auto max-w-screen-2xl px-5 sm:px-24">
+          <div className="flex flex-col gap-8">
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center"
+            >
+              <h2 className="text-3xl font-bold text-white sm:text-5xl">
+                Experience the Future of AI Cinema
+              </h2>
+              <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-gray-300">
+                Watch how artificial intelligence is revolutionizing the film
+                industry. From generating stunning visuals to enhancing
+                storytelling, AI is opening new frontiers in creative
+                expression.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative mx-auto aspect-video w-full max-w-4xl overflow-hidden rounded-lg shadow-2xl"
+            >
+              <iframe
+                className="pointer-events-none absolute inset-0 h-full w-full"
+                src="https://www.youtube-nocookie.com/embed/pBp7RYGLAZc?autoplay=1&mute=1&loop=1&playlist=pBp7RYGLAZc&controls=0&showinfo=0&rel=0&modestbranding=1"
+                title="AI Film Festival Showcase"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                frameBorder="0"
+              ></iframe>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+      <div className="mx-auto mt-24 max-w-screen-2xl px-5 sm:px-24">
         <div className="featured flex items-center gap-3">
           <svg
             viewBox="0 0 12 12"
@@ -93,11 +134,22 @@ const Work: React.FC = () => {
                 variants={imageVariants}
                 className="relative h-[300px] overflow-hidden rounded-lg"
               >
-                <img
-                  src={item.image}
-                  alt={item.heading}
-                  className="h-full w-full object-cover"
-                />
+                {item.video ? (
+                  <video
+                    src={item.video}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <img
+                    src={item.image}
+                    alt={item.heading}
+                    className="h-full w-full object-cover"
+                  />
+                )}
               </motion.div>
               <div className="mt-6">
                 <h4 className="text-sm font-medium uppercase tracking-wider text-gray-500">

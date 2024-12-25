@@ -71,54 +71,25 @@ function Images() {
       className="relative flex h-[70vh] w-full items-center justify-center overflow-hidden bg-white sm:h-[125vh]"
     >
       <div
-        ref={first}
-        className="absolute right-7 top-24 h-[25%] w-24 sm:right-[26%] sm:h-[30%] sm:w-48"
-      >
-        <img
-          src={img2.src}
-          className="h-full w-full object-cover"
-          alt="Image 2"
-        />
-      </div>
-      <div
         ref={second}
-        className="absolute left-1 top-[33%] h-[20%] w-40 sm:left-[15%] sm:h-[30%] sm:w-96"
+        className="absolute left-1 top-[33%] h-[20%] w-40 sm:left-[22%] sm:h-[30%] sm:w-[30rem]"
       >
         <video
           muted
           loop
           autoPlay
-          src={"/images-vid-2.mp4"}
+          src={"/ai/video-playback.mp4"}
           className="h-full w-full object-cover"
         />
       </div>
       <div
         ref={third}
-        className="absolute bottom-0 left-0 h-[30%] w-36 sm:-bottom-[15%] sm:left-[14%] sm:h-[40%] sm:w-96"
+        className="absolute bottom-0 right-0 h-[30%] w-36 sm:-bottom-[15%] sm:right-[14%] sm:h-[40%] sm:w-96"
       >
         <img
-          src={img3.src}
+          src={"/ai/arizona.png"}
           className="h-full w-full object-cover"
           alt="Image 3"
-        />
-      </div>
-      <div
-        ref={fourth}
-        className="absolute -bottom-5 right-0 h-[30%] w-36 sm:right-[19%] sm:h-[40%] sm:w-[20%]"
-      >
-        <video
-          src={"/images-vid.mp4"}
-          className="h-full w-full object-cover"
-          autoPlay
-          muted
-          loop
-        />
-      </div>
-      <div className="h-2/3 w-[40%] sm:h-[80%] sm:w-[25%]">
-        <img
-          src={img1.src}
-          className="h-full w-full object-cover"
-          alt="Image 1"
         />
       </div>
     </div>

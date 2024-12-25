@@ -4,7 +4,7 @@ import React from "react";
 function Spread() {
   return (
     <div className="mx-auto my-10 w-full max-w-2xl bg-white text-center text-black">
-      <div className="head mt-5 flex items-center justify-center gap-3 text-center">
+      <div className="head mt-36 flex items-center justify-center gap-3 text-center">
         <svg
           viewBox="0 0 12 12"
           fill="none"
