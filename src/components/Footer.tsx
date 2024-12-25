@@ -2,13 +2,13 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="w-full bg-black text-white py-20">
-      <div className="max-w-screen-2xl mx-auto px-5 sm:px-24">
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-16">
+    <div className="w-full bg-black py-20 text-white">
+      <div className="mx-auto max-w-screen-2xl px-5 sm:px-24">
+        <div className="grid grid-cols-1 gap-16 sm:grid-cols-4">
           {/* About Section */}
           <div className="col-span-1 sm:col-span-2">
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6">AI Film 3</h2>
-            <p className="text-gray-400 leading-relaxed mb-8">
+            <h2 className="mb-6 text-3xl font-bold sm:text-4xl">AI Film 3</h2>
+            <p className="mb-8 leading-relaxed text-gray-400">
               Join us for the third annual AI Film Festival in Glendale,
               Arizona. Experience the future of cinema through AI-generated
               films, artwork, and innovative storytelling.
@@ -16,10 +16,10 @@ function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="text-white hover:text-gray-400 transition-colors"
+                className="text-white transition-colors hover:text-gray-400"
               >
                 <svg
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -29,10 +29,10 @@ function Footer() {
               </a>
               <a
                 href="#"
-                className="text-white hover:text-gray-400 transition-colors"
+                className="text-white transition-colors hover:text-gray-400"
               >
                 <svg
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -46,10 +46,10 @@ function Footer() {
               </a>
               <a
                 href="#"
-                className="text-white hover:text-gray-400 transition-colors"
+                className="text-white transition-colors hover:text-gray-400"
               >
                 <svg
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -66,12 +66,12 @@ function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="mb-4 text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#about-us"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  href="/about"
+                  className="text-gray-400 transition-colors hover:text-white"
                 >
                   About Us
                 </a>
@@ -79,7 +79,7 @@ function Footer() {
               <li>
                 <a
                   href="#schedules"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 transition-colors hover:text-white"
                 >
                   Schedules
                 </a>
@@ -87,7 +87,7 @@ function Footer() {
               <li>
                 <a
                   href="#buy-tickets"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 transition-colors hover:text-white"
                 >
                   Buy Tickets
                 </a>
@@ -95,7 +95,7 @@ function Footer() {
               <li>
                 <a
                   href="#hotel"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 transition-colors hover:text-white"
                 >
                   Hotel
                 </a>
@@ -103,7 +103,7 @@ function Footer() {
               <li>
                 <a
                   href="#video-upload"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 transition-colors hover:text-white"
                 >
                   Video Upload
                 </a>
@@ -111,7 +111,7 @@ function Footer() {
               <li>
                 <a
                   href="#sponsors"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="text-gray-400 transition-colors hover:text-white"
                 >
                   Sponsors
                 </a>
@@ -121,7 +121,7 @@ function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <h3 className="mb-4 text-lg font-semibold">Contact Info</h3>
             <ul className="space-y-3 text-gray-400">
               <li>Glendale, Arizona</li>
               <li>October 31 – November 2</li>
@@ -132,27 +132,27 @@ function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-20 pt-8 border-t border-gray-800">
-          <div className="flex flex-col sm:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">
+        <div className="mt-20 border-t border-gray-800 pt-8">
+          <div className="flex flex-col items-center justify-between sm:flex-row">
+            <p className="text-sm text-gray-400">
               © 2024 AI Film 3. All rights reserved.
             </p>
-            <div className="flex gap-6 mt-4 sm:mt-0">
+            <div className="mt-4 flex gap-6 sm:mt-0">
               <a
                 href="#privacy"
-                className="text-gray-400 text-sm hover:text-white transition-colors"
+                className="text-sm text-gray-400 transition-colors hover:text-white"
               >
                 Privacy Policy
               </a>
               <a
                 href="#terms"
-                className="text-gray-400 text-sm hover:text-white transition-colors"
+                className="text-sm text-gray-400 transition-colors hover:text-white"
               >
                 Terms of Service
               </a>
               <a
                 href="#cookie"
-                className="text-gray-400 text-sm hover:text-white transition-colors"
+                className="text-sm text-gray-400 transition-colors hover:text-white"
               >
                 Cookie Policy
               </a>

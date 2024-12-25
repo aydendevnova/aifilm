@@ -3,20 +3,20 @@ import React from "react";
 
 function Landing() {
   return (
-    <div className="relative w-full h-[100vh] bg-black">
-      <div className="picture w-full h-full overflow-hidden">
+    <div className="relative h-[100vh] w-full bg-black">
+      <div className="picture h-full w-full overflow-hidden">
         <img
           data-scroll
           data-scroll-speed="-1"
           src="https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)"
-          className="w-full h-full object-cover opacity-50"
+          className="h-full w-full object-cover opacity-50"
           alt="AI Film Festival"
         />
       </div>
 
       <div className="absolute top-0 w-full">
-        <div className="text-white max-w-screen-2xl h-full mx-auto px-5 sm:px-24">
-          <div className="para leading-tight mt-32 sm:mt-[12rem]">
+        <div className="mx-auto h-full max-w-screen-2xl px-5 text-white sm:px-24">
+          <div className="para mt-32 leading-tight sm:mt-[12rem]">
             {[
               "AI Film 3 Festival",
               "Where Innovation Meets Imagination",
@@ -25,7 +25,7 @@ function Landing() {
               return (
                 <p
                   key={index}
-                  className="text-xl sm:text-3xl overflow-hidden font-light"
+                  className="overflow-hidden text-xl font-light sm:text-3xl"
                 >
                   <motion.span
                     initial={{ y: "100%", opacity: 0 }}
@@ -48,7 +48,7 @@ function Landing() {
               return (
                 <h1
                   key={index}
-                  className="text-6xl sm:text-[8rem] font-bold -mt-8 py-6 tracking-tight leading-none overflow-hidden"
+                  className="-mt-8 overflow-hidden py-6 text-6xl font-bold leading-none tracking-tight sm:text-[8rem]"
                 >
                   <motion.span
                     initial={{ y: "100%", opacity: 0 }}
@@ -66,34 +66,34 @@ function Landing() {
               );
             })}
           </div>
-          <div className="stats mt-16 sm:mt-24 grid grid-cols-2 sm:grid-cols-4 gap-8">
+          <div className="stats mt-16 grid grid-cols-2 gap-8 sm:mt-24 sm:grid-cols-4">
             <div className="stat">
-              <h3 className="text-4xl sm:text-5xl font-bold">157+</h3>
-              <p className="text-sm sm:text-base mt-2">Films Showcased</p>
+              <h3 className="text-4xl font-bold sm:text-5xl">157+</h3>
+              <p className="mt-2 text-sm sm:text-base">Films Showcased</p>
             </div>
             <div className="stat">
-              <h3 className="text-4xl sm:text-5xl font-bold">200+</h3>
-              <p className="text-sm sm:text-base mt-2">Art Exhibits</p>
+              <h3 className="text-4xl font-bold sm:text-5xl">200+</h3>
+              <p className="mt-2 text-sm sm:text-base">Art Exhibits</p>
             </div>
             <div className="stat">
-              <h3 className="text-4xl sm:text-5xl font-bold">40+</h3>
-              <p className="text-sm sm:text-base mt-2">Industry Speakers</p>
+              <h3 className="text-4xl font-bold sm:text-5xl">40+</h3>
+              <p className="mt-2 text-sm sm:text-base">Industry Speakers</p>
             </div>
             <div className="stat">
-              <h3 className="text-4xl sm:text-5xl font-bold">400+</h3>
-              <p className="text-sm sm:text-base mt-2">Total Attendees</p>
+              <h3 className="text-4xl font-bold sm:text-5xl">400+</h3>
+              <p className="mt-2 text-sm sm:text-base">Total Attendees</p>
             </div>
           </div>
           <div className="cta-buttons mt-16 flex gap-6">
             <a
               href="#tickets"
-              className="bg-white text-black px-8 py-4 text-lg font-medium rounded-full hover:bg-opacity-90 transition-all"
+              className="rounded-full bg-white px-8 py-4 text-lg font-medium text-black transition-all hover:bg-opacity-90"
             >
               Buy Tickets
             </a>
             <a
               href="#virtual"
-              className="border border-white px-8 py-4 text-lg font-medium rounded-full hover:bg-white hover:text-black transition-all"
+              className="rounded-full border border-white px-8 py-4 text-lg font-medium transition-all hover:bg-white hover:text-black"
             >
               Virtual Experience
             </a>

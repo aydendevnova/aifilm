@@ -1,5 +1,5 @@
+"use client";
 import React, { useEffect, useRef } from "react";
-import vid from "../assets/PlayReel.mp4";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -29,7 +29,7 @@ const PlayReel: React.FC = () => {
         ease: "power4.easeOut",
         duration: 1,
       },
-      "a"
+      "a",
     );
 
     tl.to(
@@ -39,7 +39,7 @@ const PlayReel: React.FC = () => {
         ease: "power4.easeOut",
         duration: 1,
       },
-      "a"
+      "a",
     );
 
     tl.to(
@@ -49,19 +49,25 @@ const PlayReel: React.FC = () => {
         ease: "power4.easeOut",
         duration: 1,
       },
-      "a"
+      "a",
     );
   }, []);
 
   return (
-    <div ref={parent} className="w-full h-screen bg-black text-white relative">
+    <div ref={parent} className="relative h-screen w-full bg-black text-white">
       <div
         ref={videodiv}
-        className="video-container w-32 sm:w-96 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        className="video-container absolute left-1/2 top-1/2 w-32 -translate-x-1/2 -translate-y-1/2 sm:w-96"
       >
-        <video loop muted autoPlay className="scale-[1.5]" src={vid} />
+        <video
+          loop
+          muted
+          autoPlay
+          className="scale-[1.5]"
+          src={"/PlayReel.mp4"}
+        />
       </div>
-      <div className="overlay absolute w-full h-full flex flex-col items-center py-10 justify-between">
+      <div className="overlay absolute flex h-full w-full flex-col items-center justify-between py-10">
         <div className="play-reel flex items-center justify-center gap-3">
           <svg
             viewBox="0 0 12 12"

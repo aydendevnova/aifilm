@@ -3,8 +3,8 @@ import React from "react";
 
 function Spread() {
   return (
-    <div className="w-full bg-white text-black max-w-2xl mx-auto text-center my-10">
-      <div className="head mt-5 flex items-center justify-center gap-3 text-center ">
+    <div className="mx-auto my-10 w-full max-w-2xl bg-white text-center text-black">
+      <div className="head mt-5 flex items-center justify-center gap-3 text-center">
         <svg
           viewBox="0 0 12 12"
           fill="none"
@@ -23,7 +23,10 @@ function Spread() {
       <div className="mt-5">
         {["Spread", "the news"].map((v, i) => {
           return (
-            <h1 className="text-5xl sm:text-9xl py-5 tracking-tight capitalize overflow-hidden">
+            <h1
+              className="overflow-hidden py-5 text-5xl capitalize tracking-tight sm:text-9xl"
+              key={i}
+            >
               <motion.span
                 initial={{ rotate: 90, y: "100%", opacity: 0 }}
                 animate={{ rotate: 0, y: 0, opacity: 1 }}
@@ -40,13 +43,13 @@ function Spread() {
             </h1>
           );
         })}
-        <p className="text-lg mt-8 px-10 sm:px-20 sm:mt-16  ">
+        <p className="mt-8 px-10 text-lg sm:mt-16 sm:px-20">
           Find out more about our work on these leading design and technology
           platforms.
         </p>
         <a
           href="#"
-          className="text-black cursor-pointer border-b-[1px] border-black text-lg mt-10 inline-block"
+          className="mt-10 inline-block cursor-pointer border-b-[1px] border-black text-lg text-black"
         >
           Browse all news
         </a>

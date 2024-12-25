@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -59,9 +60,9 @@ const Work: React.FC = () => {
   ]);
 
   return (
-    <div className="w-full relative bg-white py-20">
-      <div className="max-w-screen-2xl mx-auto px-5 sm:px-24">
-        <div className="featured flex gap-3 items-center">
+    <div className="relative w-full bg-white py-20">
+      <div className="mx-auto max-w-screen-2xl px-5 sm:px-24">
+        <div className="featured flex items-center gap-3">
           <svg
             viewBox="0 0 12 12"
             fill="none"
@@ -73,12 +74,12 @@ const Work: React.FC = () => {
               fill="currentColor"
             />
           </svg>
-          <h3 className="text-lg sm:text-2xl font-medium">
+          <h3 className="text-lg font-medium sm:text-2xl">
             Festival Highlights
           </h3>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-16">
+        <div className="mt-16 grid grid-cols-1 gap-16 sm:grid-cols-2">
           {highlights.map((item, index) => (
             <motion.div
               key={index}
@@ -95,17 +96,17 @@ const Work: React.FC = () => {
                 <img
                   src={item.image}
                   alt={item.heading}
-                  className="w-full h-full object-cover"
+                  className="h-full w-full object-cover"
                 />
               </motion.div>
               <div className="mt-6">
-                <h4 className="text-sm font-medium text-gray-500 uppercase tracking-wider">
+                <h4 className="text-sm font-medium uppercase tracking-wider text-gray-500">
                   {item.subheading}
                 </h4>
-                <h3 className="mt-2 text-2xl sm:text-3xl font-bold">
+                <h3 className="mt-2 text-2xl font-bold sm:text-3xl">
                   {item.heading}
                 </h3>
-                <p className="mt-4 text-gray-600 leading-relaxed">
+                <p className="mt-4 leading-relaxed text-gray-600">
                   {item.description}
                 </p>
               </div>
@@ -116,7 +117,7 @@ const Work: React.FC = () => {
         <div className="mt-20 text-center">
           <a
             href="#tickets"
-            className="inline-block bg-black text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-opacity-90 transition-all"
+            className="inline-block rounded-full bg-black px-8 py-4 text-lg font-medium text-white transition-all hover:bg-opacity-90"
           >
             Get Your Tickets Now
           </a>
