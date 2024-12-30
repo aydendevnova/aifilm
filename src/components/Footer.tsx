@@ -133,7 +133,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#schedules"
+                    href="/schedules"
                     className="text-gray-400 transition-colors hover:text-white"
                   >
                     Schedules
@@ -141,36 +141,29 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="#buy-tickets"
+                    href="/tickets"
                     className="text-gray-400 transition-colors hover:text-white"
                   >
                     Buy Tickets
                   </a>
                 </li>
+                {/* Hotel link commented out to match Navbar */}
                 <li>
                   <a
-                    href="#hotel"
-                    className="text-gray-400 transition-colors hover:text-white"
-                  >
-                    Hotel
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#video-upload"
+                    href="https://aifilm3.com/video-upload/"
                     className="text-gray-400 transition-colors hover:text-white"
                   >
                     Video Upload
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
-                    href="#sponsors"
+                    href="/sponsors"
                     className="text-gray-400 transition-colors hover:text-white"
                   >
                     Sponsors
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
 

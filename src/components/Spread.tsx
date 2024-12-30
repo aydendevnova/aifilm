@@ -47,12 +47,12 @@ function Spread() {
           Find out more about our work on these leading design and technology
           platforms.
         </p>
-        <a
+        {/* <a
           href="#"
           className="mt-10 inline-block cursor-pointer border-b-[1px] border-black text-lg text-black"
         >
           Browse all news
-        </a>
+        </a> */}
       </div>
     </div>
   );

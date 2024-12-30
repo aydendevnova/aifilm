@@ -8,7 +8,7 @@ function Landing() {
         <video
           data-scroll
           data-scroll-speed="-1"
-          src="/ai/hero.mp4"
+          src="https://utfs.io/f/Wmyz7oM4mNQFxoDfOZsHfsLz076qZ52ynQhDlCkRb9HMaEBd"
           className="h-full w-full object-cover opacity-20"
           autoPlay
           muted
@@ -54,7 +54,7 @@ function Landing() {
             })}
           </div>
           <div className="headings mt-7">
-            {["Innovate.", "Create."].map((items, index) => {
+            {["Create."].map((items, index) => {
               return (
                 <h1
                   key={index}
@@ -96,7 +96,7 @@ function Landing() {
           </div>
           <div className="cta-buttons mt-16 flex gap-6">
             <a
-              href="/buy-tickets"
+              href="/tickets"
               className="rounded-full bg-white px-8 py-4 text-lg font-medium text-black transition-all hover:bg-opacity-90"
             >
               Buy Tickets

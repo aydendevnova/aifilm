@@ -561,16 +561,16 @@ export default function SchedulesPage() {
 
   return (
     <div
-      className="min-h-screen bg-white text-gray-800"
+      className="min-h-screen bg-black text-gray-800"
       style={{
-        backgroundImage: 'url("/popcorn.png")',
+        backgroundImage: 'url("https://utfs.io/f/Wmyz7oM4mNQFzKYSij1C6jLSUEDc0Rd8lHY9m4zuqAbf7s2r")',
         backgroundSize: "100%",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top",
-        backgroundColor: "rgba(51, 51, 51, 0.7)",
+        backgroundColor: "rgba(51, 51, 51, 0.8)",
       }}
     >
-      <div className="mx-auto max-w-7xl px-4 pb-16 pt-48">
+      <div className="mx-auto max-w-4xl px-4 pb-16 pt-48">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -588,7 +588,7 @@ export default function SchedulesPage() {
               Oct 31 - Showtimes: The Grand Opening - Theater 1
             </AccordionTrigger>
             <AccordionContent>
-              <div className="mt-4 grid grid-cols-4 gap-6 rounded-lg border border-gray-200 bg-white/90 p-6">
+              <div className="mt-4 grid grid-cols-4 gap-6 rounded-lg border border-gray-200 bg-white/70 p-6">
                 {showtimes.map((slot, index) => (
                   <div key={index} className="flex flex-col">
                     <h3 className="mb-4 text-center text-lg font-medium text-gray-900">
@@ -618,7 +618,7 @@ export default function SchedulesPage() {
               Nov 1 - Showtimes: Red-Carpet Night - Theater 1
             </AccordionTrigger>
             <AccordionContent>
-              <div className="mt-4 grid grid-cols-4 gap-6 rounded-lg border border-gray-200 bg-white/90 p-6">
+              <div className="mt-4 grid grid-cols-4 gap-6 rounded-lg border border-gray-200 bg-white/70 p-6">
                 {showtimesNov1.map((slot, index) => (
                   <div key={index} className="flex flex-col">
                     <h3 className="mb-4 text-center text-lg font-medium text-gray-900">
@@ -651,7 +651,7 @@ export default function SchedulesPage() {
               Nov 1 - Showtimes: Red-Carpet Night - Theater 3
             </AccordionTrigger>
             <AccordionContent>
-              <div className="mt-4 grid grid-cols-4 gap-6 rounded-lg border border-gray-200 bg-white/90 p-6">
+              <div className="mt-4 grid grid-cols-4 gap-6 rounded-lg border border-gray-200 bg-white/70 p-6">
                 {showtimesNov1Theater3.map((slot, index) => (
                   <div key={index} className="flex flex-col">
                     <h3 className="mb-4 text-center text-lg font-medium text-gray-900">
@@ -681,7 +681,7 @@ export default function SchedulesPage() {
               Nov 2 - Showtimes: Finale
             </AccordionTrigger>
             <AccordionContent>
-              <div className="mt-4 grid grid-cols-4 gap-6 rounded-lg border border-gray-200 bg-white/90 p-6">
+              <div className="mt-4 grid grid-cols-4 gap-6 rounded-lg border border-gray-200 bg-white/70 p-6">
                 {showtimesNov2.map((slot, index) => (
                   <div key={index} className="flex flex-col">
                     <h3 className="mb-4 text-center text-lg font-medium text-gray-900">
@@ -722,7 +722,7 @@ export default function SchedulesPage() {
                 ].map((section, index) => (
                   <div
                     key={section}
-                    className="rounded-lg border border-gray-200 bg-white/90 p-6"
+                    className="rounded-lg border border-gray-200 bg-white/70 p-6"
                   >
                     <h3 className="mb-4 text-xl font-medium">
                       {index === 0
@@ -779,7 +779,7 @@ export default function SchedulesPage() {
         </Accordion>
       </div>
       <div className="mx-auto mt-16 max-w-7xl">
-        <div className="mt-4 overflow-x-auto rounded-lg border border-gray-200 bg-white/90 p-6">
+        <div className="mt-4 overflow-x-auto rounded-lg border border-gray-200 bg-white/70 p-6">
           <h2 className="mb-4 text-2xl font-bold text-gray-900">
             Speaking and Panel Schedule
           </h2>

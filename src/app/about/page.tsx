@@ -10,7 +10,7 @@ export default function AboutPage() {
           <video
             data-scroll
             data-scroll-speed="-1"
-            src="/ai/flower-bee.mp4"
+            src="https://utfs.io/f/Wmyz7oM4mNQFxoDfOZsHfsLz076qZ52ynQhDlCkRb9HMaEBd"
             className="h-full w-full object-cover opacity-50"
             autoPlay
             muted

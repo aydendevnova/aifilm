@@ -7,7 +7,7 @@ import Image from "next/image";
 
 function Navbar() {
   return (
-    <div className="absolute z-[999] w-full select-none bg-black/10 py-5">
+    <div className="absolute z-[999] w-full select-none bg-orange-600/30 py-5 backdrop-blur-md">
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-5 sm:px-24">
         <motion.a
           initial={{ opacity: 0 }}
@@ -31,9 +31,9 @@ function Navbar() {
             { name: "About Us", path: "/about" },
             { name: "Schedules", path: "/schedules" },
             { name: "Buy Tickets", path: "/tickets" },
-            { name: "Hotel", path: "/hotel" },
-            { name: "Video Upload", path: "/upload" },
-            { name: "Sponsors", path: "/sponsors" },
+            // { name: "Hotel", path: "/hotel" },
+            { name: "Video Upload", path: "https://aifilm3.com/video-upload/" },
+            // { name: "Sponsors", path: "/sponsors" },
           ].map((item, index) => (
             <motion.a
               initial={{ opacity: 0 }}

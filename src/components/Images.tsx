@@ -78,7 +78,9 @@ function Images() {
           muted
           loop
           autoPlay
-          src={"/ai/video-playback.mp4"}
+          src={
+            "https://utfs.io/f/Wmyz7oM4mNQFPNIja59V2ODWCUE3F1GMbZInodi0RNx45XB7"
+          }
           className="h-full w-full object-cover"
         />
       </div>
@@ -87,7 +89,9 @@ function Images() {
         className="absolute bottom-0 right-0 h-[30%] w-36 sm:-bottom-[15%] sm:right-[14%] sm:h-[40%] sm:w-96"
       >
         <img
-          src={"/ai/arizona.png"}
+          src={
+            "https://utfs.io/f/Wmyz7oM4mNQFPaN3zk9V2ODWCUE3F1GMbZInodi0RNx45XB7"
+          }
           className="h-full w-full object-cover"
           alt="Image 3"
         />

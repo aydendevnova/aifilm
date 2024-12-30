@@ -64,7 +64,9 @@ const PlayReel: React.FC = () => {
           muted
           autoPlay
           className="scale-[1.5] opacity-50"
-          src={"/ai/grand-prix.mp4"}
+          src={
+            "https://utfs.io/f/Wmyz7oM4mNQFiYkTIg93EYq8uTyDsi3nCfcp1Se74axNQw2P"
+          }
         />
       </div>
       <div className="overlay absolute flex h-full w-full flex-col items-center justify-between py-10">

@@ -35,14 +35,16 @@ const Work: React.FC = () => {
       subheading: "157 Groundbreaking AI Films",
       description:
         "Experience the future of cinema with AI-generated and AI-enhanced films across multiple genres, from avant-garde to mainstream entertainment.",
-      video: "/ai/retro.mp4",
+      video:
+        "https://utfs.io/f/Wmyz7oM4mNQFfXbwDp6AMp6g7mTaxknGJyZurdvfeHwIN1YU",
     },
     {
       heading: "Art Exhibition",
       subheading: "200+ Digital Masterpieces",
       description:
         "Immerse yourself in a stunning collection of AI-generated artwork, showcasing the intersection of technology and creative expression.",
-      image: "/ai/winner.png",
+      image:
+        "https://utfs.io/f/Wmyz7oM4mNQFIFgeLsrKiUYldpf8kg7XNqWFH2coM3PsVwCt",
     },
     {
       heading: "Industry Panels",
@@ -56,7 +58,8 @@ const Work: React.FC = () => {
       subheading: "Accessible Worldwide",
       description:
         "Can't attend in person? Experience the festival virtually with exclusive access to films, art, and behind-the-scenes content.",
-      video: "/ai/pencil-frog.mp4",
+      video:
+        "https://utfs.io/f/Wmyz7oM4mNQFIb8fLKrKiUYldpf8kg7XNqWFH2coM3PsVwCt",
     },
   ]);
 
@@ -82,7 +85,6 @@ const Work: React.FC = () => {
                 expression.
               </p>
             </motion.div>
-
             <motion.div
               initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -90,14 +92,13 @@ const Work: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative mx-auto aspect-video w-full max-w-4xl overflow-hidden rounded-lg shadow-2xl"
             >
-              <iframe
-                className="pointer-events-none absolute inset-0 h-full w-full"
-                src="https://www.youtube-nocookie.com/embed/pBp7RYGLAZc?autoplay=1&mute=1&loop=1&playlist=pBp7RYGLAZc&controls=0&showinfo=0&rel=0&modestbranding=1"
-                title="AI Film Festival Showcase"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                frameBorder="0"
-              ></iframe>
+              <video
+                className="h-full w-full object-cover"
+                src="https://utfs.io/f/Wmyz7oM4mNQFpvRWxZPgPSemZQvtnI0JjfMV6cLNGqldTs9w"
+                autoPlay
+                loop
+                controls={true}
+              />
             </motion.div>
           </div>
         </div>
