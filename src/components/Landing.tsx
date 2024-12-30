@@ -10,7 +10,6 @@ function Landing() {
           data-scroll-speed="-1"
           src="https://utfs.io/f/Wmyz7oM4mNQFxoDfOZsHfsLz076qZ52ynQhDlCkRb9HMaEBd"
           className="h-full w-full object-cover opacity-20"
-          autoPlay
           muted
           loop
           playsInline
