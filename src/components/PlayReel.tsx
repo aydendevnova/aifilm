@@ -35,7 +35,7 @@ const PlayReel: React.FC = () => {
     tl.to(
       play.current,
       {
-        x: "50%",
+        x: "40%",
         ease: "power4.easeOut",
         duration: 1,
       },
@@ -45,7 +45,7 @@ const PlayReel: React.FC = () => {
     tl.to(
       reel.current,
       {
-        x: "-50%",
+        x: "-40%",
         ease: "power4.easeOut",
         duration: 1,
       },
@@ -93,7 +93,7 @@ const PlayReel: React.FC = () => {
           </div>
           <div
             ref={reel}
-            className="text-5xl font-bold text-orange-600 sm:text-9xl"
+            className="mt-24 text-5xl font-bold text-orange-600 sm:text-9xl"
           >
             Vision
           </div>
